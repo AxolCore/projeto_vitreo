@@ -15,10 +15,10 @@ export default function Footer() {
             </div>
             <div className="flex flex-col border-y-0 border-x border-lightgray w-[28vw] px-[2vw] my-8 space-y-3 mobile:w-[80vw] mobile:border-x-0">
                 <label className="text-2xl font-bold text-lightgray mobile:text-center">Navegação</label>
-                <Link className="text-base font-normal text-gray hover:text-lightgray" href="">Inicio</Link>
+                <Link className="text-base font-normal text-gray hover:text-lightgray" href="/">Inicio</Link>
                 <Link className="text-base font-normal text-gray hover:text-lightgray" href="">A Clinica</Link>
                 <Link className="text-base font-normal text-gray hover:text-lightgray" href="">Nossa Equipe</Link>
-                <Link className="text-base font-normal text-gray hover:text-lightgray" href="">Serviços</Link>
+                <Link className="text-base font-normal text-gray hover:text-lightgray" href="/quem-somos">Serviços</Link>
                 <Link className="text-base font-normal text-gray hover:text-lightgray" href="">Problemas e Tratamentos</Link>
                 <Link className="text-base font-normal text-gray hover:text-lightgray" href="">Noticias</Link>
             </div>
