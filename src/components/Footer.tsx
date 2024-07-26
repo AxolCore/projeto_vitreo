@@ -22,7 +22,7 @@ export default function Footer() {
                 <Link className="text-base font-normal text-gray hover:text-lightgray" href="">Problemas e Tratamentos</Link>
                 <Link className="text-base font-normal text-gray hover:text-lightgray" href="">Noticias</Link>
             </div>
-            <div className="flex flex-col w-[28vw] px-[2vw] space-y-3 my-8 mobile:w-[80vw]">
+            <div className="flex flex-col w-[28vw] px-[2vw] space-y-6 my-8 mobile:w-[80vw]">
                 <label className="text-2xl font-bold text-lightgray text-center">Contato</label>
                 <div className="flex flex-row"><Image src={pin} alt="localização"/><p className="text-base font-normal text-gray ml-2">Rua Mateus Leme, 2285, São Francisco Curitiba – PR, CEP: 80530-010</p></div>
                 <div className="flex flex-row"><Image src={telefone} alt="telefone"/><p className="text-base font-normal text-gray ml-2">(41) 3078-4800</p></div>
