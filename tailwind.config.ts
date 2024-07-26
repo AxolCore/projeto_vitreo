@@ -20,12 +20,14 @@ const config: Config = {
       colors: {
         "darkgray": "#2B2B2B",
         "gray": "#AAAAAA",
-        "lightgray": "#DDDDDD"
+        "lightgray": "#DDDDDD",
+        "darkblue": "#265284"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "parallax-bg": "url(/assets/parallax-bg.jpg)",
       },
     },
   },
