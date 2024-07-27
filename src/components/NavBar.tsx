@@ -1,11 +1,28 @@
+'use client'
 import Image from "next/image";
+import { useState } from "react";
 
 export default function NavBar() {
     const icone = require('../../public/assets/logo-horizontal2.jpg')
     const infoBoxMSG = require('../../public/assets/mensagem.png')
     const infoBoxLigar = require('../../public/assets/ligar.png')
+    const [listaDisplay, setListaDisplay] = useState(false);
 
+    function chamaLista(){
+
+        let listaDisplay = document.getElementById('listaul')
+        if(listaDisplay){
+        listaDisplay.style.display = 'block'
+        } 
+    }
     
+    function mostraLista() {
+        setListaDisplay(true);
+    }
+
+    function escondeLista() {
+        setListaDisplay(false);
+    }
 
     return (
         <><header className="w-screen h-[10vh] bg-[#ffffff] flex justify-center items-center">
@@ -37,15 +54,15 @@ export default function NavBar() {
             <nav className="bg-blue-500">
                 <ul className="flex justify-center">
                     <li className="mx-4 ">INÍCIO</li>
-                    <li className="mx-4 " >A CLÍNICA
-
-                       {/*} <ul className="">
-                            <li>QUEM SOMOS</li>
-                            <li>ESTRUTURA</li>
-                            <li>CONVÊNIOS</li>
-                        </ul>*/}
+                    <li onMouseEnter={mostraLista}
+                        onMouseLeave={escondeLista}  className="mx-4 " >A CLÍNICA
+                        <ul id="listaul" style={{display: listaDisplay ?'block' : 'none'}} className="absolute bg-blue-700">
+                            <li className="w-fit ">QUEM SOMOS</li>
+                            <li className="w-fit">ESTRUTURA</li>
+                            <li className="w-fit">CONVÊNIOS</li>
+                        </ul>
                     </li>
-        
+     
                     <li className="mx-4 ">NOSSA EQUIPE</li>
                     <li className="mx-4 ">NOSSOS SERVIÇOS</li>
                     <li className="mx-4 "></li>
