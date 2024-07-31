@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 
@@ -58,18 +59,18 @@ export default function NavBar() {
         </header>
             <nav className="bg-darkblue py- text-white">
                 <ul className="flex justify-center">
-                    <li className=" border-r-2 py-4 px-4 border-l-2">INÍCIO</li>
+                    <li className=" border-r-2 py-4 px-4 border-l-2"><Link href={"/"}>INÍCIO</Link></li>
                     <li onMouseEnter={mostraLista}
                         onMouseLeave={escondeLista} className="px-4 border-r-2 py-4 " >A CLÍNICA
                         <ul id="listaul" style={{ display: listaDisplay ? 'block' : 'none' }} className="absolute bg-darkblue">
-                            <li className="w-fit mt-2">QUEM SOMOS</li>
-                            <li className="w-fit">ESTRUTURA</li>
-                            <li className="w-fit">CONVÊNIOS</li>
+                            <li className="w-fit mt-2"><Link href={"/"}>QUEM SOMOS</Link></li>
+                            <li className="w-fit"><Link href={"/"}>ESTRUTURA</Link></li>
+                            <li className="w-fit"><Link href={"/"}>CONVÊNIOS</Link></li>
                         </ul>
                     </li>
 
-                    <li className="px-4 border-r-2 py-4 ">NOSSA EQUIPE</li>
-                    <li className="px-4 border-r-2 py-4 ">NOSSOS SERVIÇOS</li>
+                    <li className="px-4 border-r-2 py-4 "><Link href={"/"}>NOSSA EQUIPE</Link></li>
+                    <li className="px-4 border-r-2 py-4 "><Link href={"/"}>NOSSOS SERVIÇOS</Link></li>
                 </ul>
             </nav></>
     );
