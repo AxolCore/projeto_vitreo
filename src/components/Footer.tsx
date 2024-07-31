@@ -9,7 +9,7 @@ export default function Footer() {
     const email = require("../../public/assets/email.svg");
 
     return (
-        <div className="w-screen bg-darkgray flex flex-row justify-evenly mobile:flex-col mobile:items-center">
+        <div className="w-screen bg-darkgray flex flex-row justify-evenly mobile:flex-col mobile:items-center mt-40">
             <div className="w-[28vw] px-[2vw] my-8 mobile:w-[80vw] mobile:items-center">
                 <Image src={logo} alt="logo" />
             </div>
