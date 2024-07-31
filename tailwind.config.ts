@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+  
       screens: {
         'mobile': { 'max': '767px' },
         // => @media (max-width: 767px) { ... }
@@ -22,6 +23,7 @@ const config: Config = {
         "gray": "#AAAAAA",
         "lightgray": "#DDDDDD",
         "darkblue": "#265284"
+        
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

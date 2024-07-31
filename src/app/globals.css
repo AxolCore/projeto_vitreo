@@ -23,4 +23,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .sombra{
+    box-shadow: -15px 10px 0 #b9bec5;
+  }
+
 }
