@@ -28,9 +28,9 @@ export default function NavBar() {
     }
 
     return (
-        <><header className="w-screen h-[10vh] bg-[#ffffff] flex justify-center items-center">
+        <><header className="w-screen bg-[#ffffff] flex justify-center items-center">
             <div className="w-[60vw] bg-white flex justify-between items-center text-black">
-                <Image className="mr-2 my-auto w-[20vw]aspect-[466/68]" src={icone} alt="logo"></Image>
+                <Image className="mr-2 my-auto w-[20vw] aspect-[466/68]" src={icone} alt="logo"></Image>
                 <div className="g-green-600 flex items-center ">
                     <div className="ml-4 w-[1vw]"><Image src={infoBoxMSG} alt="ícone de carta"></Image></div>
                     <div className="ml-4 flex flex-col justify-center">
