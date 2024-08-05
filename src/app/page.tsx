@@ -1,6 +1,7 @@
 import Banner from "@/components/Banner";
 import CardsServicosSection from "@/components/CardsServicosSection";
 import ConveniosSection from "@/components/ConveniosSection";
+import MedicosSection from "@/components/MedicosSection";
 import ParallaxCardsSection from "@/components/ParallaxCardsSection";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Banner />
       <CardsServicosSection />
       <ParallaxCardsSection />
+      <MedicosSection />
       <ConveniosSection />
     </main>
   );

@@ -1,11 +1,7 @@
 declare global {
     namespace NodeJS {
       interface ProcessEnv {
-        CAPTCHA_KEY: string;
-        CAPTCHA_SERVER_KEY: string;
         NODE_ENV: 'development' | 'production';
-        PORT?: string;
-        PWD: string;
       }
     }
   }
