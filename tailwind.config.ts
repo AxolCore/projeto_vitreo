@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -31,6 +32,21 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "parallax-bg": "url(/assets/parallax-bg.jpg)",
       },
+
+      animation: {
+        "revelar-esquerda": 'esquerda 0.5s ease-in-out',
+        "revelar-direita": 'direita 0.5s ease-in-out',
+      },
+      keyframes: {
+        esquerda: {
+          '0%': { "opacity": "0%", transform: "translateX(-10vw)" }, 
+          '100%': { "opacity": "100%", transform: "translateX(0)"},
+        },
+        direita: {
+          '0%': { "opacity": "0%", transform: "translateX(10vw)" }, 
+          '100%': { "opacity": "100%", transform: "translateX(0)"},
+        },
+      }
     },
   },
   plugins: [],
