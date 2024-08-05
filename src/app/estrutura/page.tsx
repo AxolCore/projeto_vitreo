@@ -5,7 +5,7 @@ export default function Estrutura() {
     const iconeCard = require('../../../public/assets/iconePlaceHolder.png')
     const imagemQualidade = require('../../../public/assets/imagemTerceiraSectionEstrutura.png')
     return (
-        <div className="mx-auto w-[60%] h-screen b-yellow-300 mt-4">
+        <div className="mx-auto w-[60%] b-yellow-300 mt-4">
             <div className="mb-20">
                 <h1 className="text-[#6462AB] text-4xl mb-4 "><span className="border-t-[3px] border-x-darkblue">Nossas</span> instalações</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu vulputate erat. Vivamus tristique orci metus, <br /> faucibus fringilla ex pharetra sed. Nulla fringilla elit non erat finibus, id eleifend erat pretium. </p>
