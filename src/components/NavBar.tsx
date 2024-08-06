@@ -28,7 +28,7 @@ export default function NavBar() {
     }
 
     return (
-        <><header className="w-screen bg-[#ffffff] flex justify-center items-center">
+        <><header className="w-screen bg-[#ffffff] flex justify-center items-center p-2">
             <div className="w-[60vw] bg-white flex justify-between items-center text-black">
                 <Image className="mr-2 my-auto w-[20vw] aspect-[466/68]" src={icone} alt="logo"></Image>
                 <div className="g-green-600 flex items-center ">
@@ -62,14 +62,14 @@ export default function NavBar() {
                     <li className=" border-r-2 py-4 px-4 border-l-2"><Link href={"/"}>INÍCIO</Link></li>
                     <li onMouseEnter={mostraLista}
                         onMouseLeave={escondeLista} className="px-4 border-r-2 py-4 " >A CLÍNICA
-                        <ul id="listaul" style={{ display: listaDisplay ? 'block' : 'none' }} className="absolute bg-darkblue">
-                            <li className="w-fit mt-2"><Link href={"/"}>QUEM SOMOS</Link></li>
-                            <li className="w-fit"><Link href={"/"}>ESTRUTURA</Link></li>
-                            <li className="w-fit"><Link href={"/"}>CONVÊNIOS</Link></li>
-                        </ul>
+                        <ul id="listaul" style={{ display: listaDisplay ? 'block' : 'none' }} className="absolute bg-darkblue mt-2">
+                            <li className="w-fit mt-2 hover:text list-none m-2 border-y-2"><Link href={"/"}>QUEM SOMOS</Link></li>
+                             <li className="w-fit hover:t list-none m-2 border-y-2"><Link href={"/"}>ESTRUTURA</Link></li>
+                             <li className="w-fit hover:t list-none m-2 border-y-2"><Link href={"/"}>CONVÊNIOS</Link></li>
+                      </ul>
                     </li>
 
-                    <li className="px-4 border-r-2 py-4 "><Link href={"/"}>NOSSA EQUIPE</Link></li>
+                    <li className="px-4 border-r-2  py-4  "><Link href={"/"}>NOSSA EQUIPE</Link></li>
                     <li className="px-4 border-r-2 py-4 "><Link href={"/"}>NOSSOS SERVIÇOS</Link></li>
                 </ul>
             </nav></>
