@@ -11,6 +11,12 @@ export default function NavBar() {
     const formsIcon = require('../../public/assets/contact-form.png')
     const [listaDisplay, setListaDisplay] = useState(false);
 
+
+    function scroll(id: string) {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+    }
+
+
     function chamaLista() {
 
         let listaDisplay = document.getElementById('listaul')
@@ -50,7 +56,7 @@ export default function NavBar() {
 
 
                 </div>
-                <button className="flex items-center justify-center gap-1 bg-lightgray ml-2 w-44 h-10 rounded-2xl">
+                <button onClick={() => document.location.href = "/contato"} className="flex items-center justify-center gap-1 bg-lightgray ml-2 w-44 h-10 rounded-2xl">
                     <div>Entre em contato</div>
                     <Image className="w-5 h-5 top-[30%] right-4" src={formsIcon} alt="formulário" />
                 </button>
@@ -63,14 +69,13 @@ export default function NavBar() {
                     <li onMouseEnter={mostraLista}
                         onMouseLeave={escondeLista} className="px-4 border-r-2 py-4 " >A CLÍNICA
                         <ul id="listaul" style={{ display: listaDisplay ? 'block' : 'none' }} className="absolute bg-darkblue mt-2">
-                            <li className="w-fit mt-2 hover:text list-none m-2 border-y-2"><Link href={"/"}>QUEM SOMOS</Link></li>
-                            <li className="w-fit hover:t list-none m-2 border-y-2"><Link href={"/"}>ESTRUTURA</Link></li>
-                            <li className="w-fit hover:t list-none m-2 border-y-2"><Link href={"/"}>CONVÊNIOS</Link></li>
+                            <li className="w-fit mt-2 hover:text list-none m-2 border-y-2"><Link href={"/quem-somos"}>QUEM SOMOS</Link></li>
+                            <li className="w-fit hover:t list-none m-2 border-y-2"><Link href={"/estrutura"}>ESTRUTURA</Link></li>
                         </ul>
                     </li>
 
-                    <li className="px-4 border-r-2  py-4  "><Link href={"/"}>NOSSA EQUIPE</Link></li>
-                    <li className="px-4 border-r-2 py-4 "><Link href={"/"}>NOSSOS SERVIÇOS</Link></li>
+                    <li className="px-4 border-r-2  py-4  "><button onClick={() => scroll("equipe")}>NOSSA EQUIPE</button></li>
+                    <li className="px-4 border-r-2 py-4 "><button onClick={() => scroll("servicos")}>NOSSOS SERVIÇOS</button></li>
                 </ul>
             </nav></>
     );

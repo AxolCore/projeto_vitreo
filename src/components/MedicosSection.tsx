@@ -14,7 +14,7 @@ export default function MedicosSection() {
 
     return (
         <ParallaxProvider>
-            <Parallax onEnter={() => setVisivel(true)} className={`w-screen flex flex-col items-center justify-center ${visivel ? "animate-revelar-esquerda" : "opacity-0"}`}>
+            <Parallax id="equipe" onEnter={() => setVisivel(true)} className={`w-screen flex flex-col items-center justify-center ${visivel ? "animate-revelar-esquerda" : "opacity-0"}`}>
                 <label className="text-3xl font-bold text-darkgray text-center mt-12 mb-6">EQUIPE MÉDICA</label>
                 <label className="w-[5vw] border-b-2 border-darkgray text-center"></label>
                 <div className="w-screen px-[10vw] flex flex-row mobile:flex-col gap-16 my-8">

@@ -13,7 +13,7 @@ export default function CardsServicosSection() {
 
     return (
         <ParallaxProvider>
-            <Parallax onEnter={() => setVisivel(true)} className={`desktop:w-[60vw] mobile:w-[90vw] mb-32 ${visivel ? "animate-revelar-esquerda" : "opacity-0"}`}>
+            <Parallax id="servicos" onEnter={() => setVisivel(true)} className={`desktop:w-[60vw] mobile:w-[90vw] mb-32 ${visivel ? "animate-revelar-esquerda" : "opacity-0"}`}>
                 <CardServico
                     titulo={"Confira nossos Serviços"}
                     descricao={`
