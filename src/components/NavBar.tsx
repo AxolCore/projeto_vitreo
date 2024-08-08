@@ -28,9 +28,9 @@ export default function NavBar() {
     }
 
     return (
-        <><header className="w-screen h-[10vh] bg-[#ffffff] flex justify-center items-center">
-            <div className="w-[60vw] bg-white flex justify-between items-center text-black">
-                <Image className="mr-2 my-auto w-[20vw]aspect-[466/68]" src={icone} alt="logo"></Image>
+        <><header className="w-screen bg-[#ffffff] flex justify-center items-center p-2">
+            <div className="w-[60vw] bg-white flex justify-between items-center text-black mobile:flex-col">
+                <Image className="mr-2 my-auto w-[20vw] mobile:w-[90vw] aspect-[466/68]" src={icone} alt="logo"></Image>
                 <div className="g-green-600 flex items-center ">
                     <div className="ml-4 w-[1vw]"><Image src={infoBoxMSG} alt="ícone de carta"></Image></div>
                     <div className="ml-4 flex flex-col justify-center">
@@ -57,19 +57,19 @@ export default function NavBar() {
             </div>
 
         </header>
-            <nav className="bg-darkblue py- text-white">
+            <nav className="bg-darkblue py- text-white border-b border-white">
                 <ul className="flex justify-center">
                     <li className=" border-r-2 py-4 px-4 border-l-2"><Link href={"/"}>INÍCIO</Link></li>
                     <li onMouseEnter={mostraLista}
                         onMouseLeave={escondeLista} className="px-4 border-r-2 py-4 " >A CLÍNICA
-                        <ul id="listaul" style={{ display: listaDisplay ? 'block' : 'none' }} className="absolute bg-darkblue">
-                            <li className="w-fit mt-2"><Link href={"/"}>QUEM SOMOS</Link></li>
-                            <li className="w-fit"><Link href={"/"}>ESTRUTURA</Link></li>
-                            <li className="w-fit"><Link href={"/"}>CONVÊNIOS</Link></li>
+                        <ul id="listaul" style={{ display: listaDisplay ? 'block' : 'none' }} className="absolute bg-darkblue mt-2">
+                            <li className="w-fit mt-2 hover:text list-none m-2 border-y-2"><Link href={"/"}>QUEM SOMOS</Link></li>
+                            <li className="w-fit hover:t list-none m-2 border-y-2"><Link href={"/"}>ESTRUTURA</Link></li>
+                            <li className="w-fit hover:t list-none m-2 border-y-2"><Link href={"/"}>CONVÊNIOS</Link></li>
                         </ul>
                     </li>
 
-                    <li className="px-4 border-r-2 py-4 "><Link href={"/"}>NOSSA EQUIPE</Link></li>
+                    <li className="px-4 border-r-2  py-4  "><Link href={"/"}>NOSSA EQUIPE</Link></li>
                     <li className="px-4 border-r-2 py-4 "><Link href={"/"}>NOSSOS SERVIÇOS</Link></li>
                 </ul>
             </nav></>
