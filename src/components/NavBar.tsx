@@ -57,7 +57,7 @@ export default function NavBar() {
             </div>
 
         </header>
-            <nav className="bg-darkblue py- text-white">
+            <nav className="bg-darkblue py- text-white border-b border-white">
                 <ul className="flex justify-center">
                     <li className=" border-r-2 py-4 px-4 border-l-2"><Link href={"/"}>INÍCIO</Link></li>
                     <li onMouseEnter={mostraLista}
