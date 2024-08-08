@@ -10,7 +10,7 @@ interface ConvenioProps {
 
 export default function Convenio ({imagem, alt, link}: ConvenioProps){
     return(
-        <Link className="flex flex-col items-center border-0" href={link}>
+        <Link className="flex flex-col items-center justify-center border-0 aspect-square" href={link}>
             <Image src={imagem} alt={alt} />
         </Link>
     )
