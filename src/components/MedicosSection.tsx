@@ -15,7 +15,7 @@ export default function MedicosSection() {
     return (
         <ParallaxProvider>
             <Parallax onEnter={() => setVisivel(true)} className={`w-screen flex flex-col items-center justify-center ${visivel ? "animate-revelar-esquerda" : "opacity-0"}`}>
-                <label className="text-3xl font-bold text-darkgray text-center mt-12 mb-6">NOSSOS CONVÊNIOS</label>
+                <label className="text-3xl font-bold text-darkgray text-center mt-12 mb-6">EQUIPE MÉDICA</label>
                 <label className="w-[5vw] border-b-2 border-darkgray text-center"></label>
                 <div className="w-screen px-[10vw] flex flex-row gap-16 my-8">
                     <MedicoCard nome={"DRA. ALINE SHIOKAWA"} crm={"CRMPR-27847"} especializacao={"Médica oftalmologista"} imagem={aline} alt={"DRA. ALINE SHIOKAWA"} />
