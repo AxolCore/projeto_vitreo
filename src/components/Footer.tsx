@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Footer() {
 
-    const logo = require("../../public/assets/logo.jpg");
+    const logo = require("../../public/assets/logo2.png");
     const pin = require("../../public/assets/pin.svg");
     const telefone = require("../../public/assets/telefone.svg");
     const email = require("../../public/assets/email.svg");
