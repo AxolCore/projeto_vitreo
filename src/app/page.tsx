@@ -1,5 +1,5 @@
 import Banner from "@/components/Banner";
-import CardOlhos from "@/components/CardsOlhos";
+import CardOlhosSection from "@/components/CardsOlhosSection";
 import CardsServicosSection from "@/components/CardsServicosSection";
 import Comentarios from "@/components/Comentarios";
 import ConveniosSection from "@/components/ConveniosSection";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <Banner />
-      <CardOlhos />
+      <CardOlhosSection />
       <CardsServicosSection />
       <ParallaxCardsSection />
       <MedicosSection />
