@@ -11,7 +11,7 @@ interface MedicoProps {
 
 export default function MedicoCard({ nome, crm, especializacao, imagem, alt }: MedicoProps) {
     return (
-        <div className="flex flex-col items-center justify-center group bg-lightgray pb-8 ring-blue-500 hover:ring hover:scale-105 transition duration-500 rounded-lg">
+        <div className="flex flex-col items-center justify-center group w-[20vw] bg-lightgray pb-8 ring-blue-500 hover:ring hover:scale-105 transition duration-500 rounded-lg">
             <Image className="group-hover:brightness-50 mb-8 rounded-t-lg" src={imagem} alt={alt} />
             <label className="text-lg font-light text-darkgray">{nome}</label>
             <span className="border-y border-double border-y-blue-800 w-16 h-1 my-2"></span>

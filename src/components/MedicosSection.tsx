@@ -8,7 +8,7 @@ export default function MedicosSection() {
     const [visivel, setVisivel] = useState(false);
 
     const aline = require("../../public/assets/medicos/aline-shiokawa.jpg");
-    const mario = require("../../public/assets/medicos/placeholder.jpg");
+    const mario = require("../../public/assets/medicos/mario-sato.jpg");
     const cassia = require("../../public/assets/medicos/cassia-saito.jpg");
     const naoye = require("../../public/assets/medicos/naoye-shiokawa.jpg");
 
