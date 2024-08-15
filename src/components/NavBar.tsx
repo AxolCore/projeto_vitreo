@@ -10,7 +10,6 @@ export default function NavBar() {
     const infoBoxMSG = require('../../public/assets/mensagem.png')
     const infoBoxLigar = require('../../public/assets/ligar.png')
     const formsIcon = require('../../public/assets/contact-form.png')
-    const scrollid = useSearchParams().get("scroll")
     const [listaDisplay, setListaDisplay] = useState(false);
 
 
@@ -19,15 +18,17 @@ export default function NavBar() {
             document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
         }
         else {
-            document.location.href = `/?scroll=${id}`;
+            document.location.href = `/?${id}`;
         }
     }
 
     useEffect(() => {
+        var scrollid = document.location.search
+        scrollid = scrollid.slice(1);
         if(scrollid != null){
             document.getElementById(scrollid)?.scrollIntoView({ behavior: "smooth" })
         }
-    },[scrollid])
+    },[])
 
 
     function chamaLista() {
