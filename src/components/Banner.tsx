@@ -15,8 +15,8 @@ export default function Banner() {
              
                 <p className="text-slate-600 text-lg">A Retina e Vítreo Consultoria é uma referência no diagnóstico e tratamento das doenças da retina e do vítreo, contando com médicos renomados e especializados na área. Fundada pelo Dr. Naoye Shiokawa, pioneiro na moderna técnica de correção de descolamento de retina por meio da vitrectomia em 1981, a clínica oferece aos seus pacientes a conveniência de realizar exames na própria clínica, proporcionando um atendimento completo e de qualidade. Venha ser nosso paciente você também!</p>
                 <div className="flex gap-2 mt-12">
-                    <button className="bg-darkblue p-2 rounded-3xl hover:bg-white hover:text-black" onClick={() => router.push("/quem-somos")}>Saiba mais</button>
-                    <button className="bg-darkblue p-2 rounded-3xl hover:bg-white hover:text-black" onClick={() => router.push("/contato")}>Entre em Contato</button>
+                    <button className="bg-darkblue p-2 rounded-3xl hover:bg-slate-500 hover:text-black" onClick={() => router.push("/quem-somos")}>Saiba mais</button>
+                    <button className="bg-darkblue p-2 rounded-3xl hover:bg-slate-500 hover:text-black" onClick={() => router.push("/contato")}>Entre em Contato</button>
                 </div>
             </div>
         </div>
