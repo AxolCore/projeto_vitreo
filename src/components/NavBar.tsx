@@ -1,7 +1,8 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 
 export default function NavBar() {
@@ -9,12 +10,24 @@ export default function NavBar() {
     const infoBoxMSG = require('../../public/assets/mensagem.png')
     const infoBoxLigar = require('../../public/assets/ligar.png')
     const formsIcon = require('../../public/assets/contact-form.png')
+    const scrollid = useSearchParams().get("scroll")
     const [listaDisplay, setListaDisplay] = useState(false);
 
 
     function scroll(id: string) {
-        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+        if (document.location.pathname == "/") {
+            document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+        }
+        else {
+            document.location.href = `/?scroll=${id}`;
+        }
     }
+
+    useEffect(() => {
+        if(scrollid != null){
+            document.getElementById(scrollid)?.scrollIntoView({ behavior: "smooth" })
+        }
+    },[scrollid])
 
 
     function chamaLista() {
