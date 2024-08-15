@@ -1,7 +1,8 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 
 export default function NavBar() {
@@ -13,8 +14,21 @@ export default function NavBar() {
 
 
     function scroll(id: string) {
-        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+        if (document.location.pathname == "/") {
+            document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+        }
+        else {
+            document.location.href = `/?${id}`;
+        }
     }
+
+    useEffect(() => {
+        var scrollid = document.location.search
+        scrollid = scrollid.slice(1);
+        if(scrollid != null){
+            document.getElementById(scrollid)?.scrollIntoView({ behavior: "smooth" })
+        }
+    },[])
 
 
     function chamaLista() {
