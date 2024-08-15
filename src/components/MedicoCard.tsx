@@ -15,7 +15,7 @@ export default function MedicoCard({ nome, crm, especializacao, imagem, alt }: M
             <Image className="group-hover:brightness-50 mb-8 rounded-t-lg" src={imagem} alt={alt} />
             <label className="text-lg font-light text-darkgray">{nome}</label>
             <span className="border-y border-double border-y-blue-800 w-16 h-1 my-2"></span>
-            <label className="font-light text-darkgray">{especializacao} | {crm}</label>
+            <label className="font-light text-darkgray text-center whitespace-break-spaces">{especializacao}  |  {crm}</label>
         </div>
     )
 }
