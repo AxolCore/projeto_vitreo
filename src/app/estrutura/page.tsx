@@ -1,44 +1,26 @@
 import Image from "next/image";
+import CardEstrutura from "@/components/CardEstrutura";
 
 export default function Estrutura() {
     const cardImage = require('../../../public/assets/imagemCard.png')
-    const iconeCard = require('../../../public/assets/iconePlaceHolder.png')
+    const cardImageRua = require('../../../public/assets/Retina_e_vitreo_rua.jpg')
+    const cardImageClinica = require('../../../public/assets/imagemClinica.png')
+    const iconeRua = require('../../../public/assets/rua.png')
+    const iconeMedico = require('../../../public/assets/oftalmologista.png')
+    const iconeClinica = require('../../../public/assets/clinica-de-saude.png')
     const imagemQualidade = require('../../../public/assets/imagemTerceiraSectionEstrutura.png')
     return (
-        <div className="mx-auto w-[60%] b-yellow-300 mt-4">
+        <div className="mx-auto w-[80%] b-yellow-300 mt-4">
             <div className="mb-20">
                 <h1 className="text-[#6462AB] text-4xl mb-4 "><span className="border-t-[3px] border-x-darkblue">Nossas</span> instalações</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu vulputate erat. Vivamus tristique orci metus, <br /> faucibus fringilla ex pharetra sed. Nulla fringilla elit non erat finibus, id eleifend erat pretium. </p>
 
             </div>
 
-            <div className="flex gap-16  b-green-500 h-auto mx-auto max-w-[1152px] ">
-                <div className="sombra flex flex-col items-center bg-darkblue w-[30%] rounded-2xl gap-4 "> {/* inline seria: style={{boxShadow: '-25px -25px 0px #fff'}} */}
-                    <Image className="mt-4" alt='ícone' src={iconeCard} />
-
-                    <p className="w-[80%] m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu vulputate erat. Vivamus tristique orci metus, faucibus fringilla ex pharetra sed</p>
-                    <div className=" bg-red-600 rounded-2xl h-64"><Image className="h-full rounded-2xl" alt='card' src={cardImage} /></div>
-
-
-                </div>
-
-                <div className="sombra flex flex-col items-center bg-darkblue w-[30%] rounded-2xl gap-4 "> {/* inline seria: style={{boxShadow: '-25px -25px 0px #fff'}} */}
-
-                    <div className=" bg-red-600 rounded-2xl h-64"><Image className="h-full rounded-2xl" alt='card' src={cardImage} /></div>
-
-                    <p className="w-[80%] m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu vulputate erat. Vivamus tristique orci metus, faucibus fringilla ex pharetra sed</p>
-                    <Image className="mt-4" alt='ícone' src={iconeCard} />
-
-                </div>
-
-                <div className="sombra flex flex-col items-center bg-darkblue w-[30%] rounded-2xl gap-4 "> {/* inline seria: style={{boxShadow: '-25px -25px 0px #fff'}} */}
-                    <Image className="mt-4" alt='ícone' src={iconeCard} />
-
-                    <p className="w-[80%] m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu vulputate erat. Vivamus tristique orci metus, faucibus fringilla ex pharetra sed</p>
-                    <div className=" bg-red-600 rounded-2xl h-64"><Image className="h-full rounded-2xl" alt='card' src={cardImage} /></div>
-
-
-                </div>
+            <div className="flex flex-row items-center justify-between b-green-500 w-full">
+                <CardEstrutura icone={iconeMedico} texto={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu vulputate erat. Vivamus tristique orci metus, faucibus fringilla ex pharetra sed"} imagem={cardImage}/>
+                <CardEstrutura icone={iconeRua} texto={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu vulputate erat. Vivamus tristique orci metus, faucibus fringilla ex pharetra sed"} imagem={cardImageRua} invertido/>
+                <CardEstrutura icone={iconeClinica} texto={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu vulputate erat. Vivamus tristique orci metus, faucibus fringilla ex pharetra sed"} imagem={cardImageClinica}/>
 
             </div>
 
