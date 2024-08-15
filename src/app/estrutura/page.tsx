@@ -10,14 +10,14 @@ export default function Estrutura() {
     const iconeClinica = require('../../../public/assets/clinica-de-saude.png')
     const imagemQualidade = require('../../../public/assets/imagemTerceiraSectionEstrutura.png')
     return (
-        <div className="mx-auto w-[80%] b-yellow-300 mt-4">
+        <div className="mx-auto w-[80%] b-yellow-300 mt-4 flex flex-col">
             <div className="mb-20">
                 <h1 className="text-[#6462AB] text-4xl mb-4 "><span className="border-t-[3px] border-x-darkblue">Nossas</span> instalações</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu vulputate erat. Vivamus tristique orci metus, <br /> faucibus fringilla ex pharetra sed. Nulla fringilla elit non erat finibus, id eleifend erat pretium. </p>
+                <p>Nossa clínica oferece tudo o que você precisa para cuidar da sua saúde: estrutura completa, <br/>estacionamento seguro e equipamentos de última geração. Seu bem-estar é o nosso compromisso.</p>
 
             </div>
 
-            <div className="flex flex-row items-center justify-between b-green-500 w-full">
+            <div className="flex flex-row items-center justify-between b-green-500 w-full max-w-[1280px] self-center">
                 <CardEstrutura icone={iconeMedico} texto={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu vulputate erat. Vivamus tristique orci metus, faucibus fringilla ex pharetra sed"} imagem={cardImage}/>
                 <CardEstrutura icone={iconeRua} texto={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu vulputate erat. Vivamus tristique orci metus, faucibus fringilla ex pharetra sed"} imagem={cardImageRua} invertido/>
                 <CardEstrutura icone={iconeClinica} texto={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu vulputate erat. Vivamus tristique orci metus, faucibus fringilla ex pharetra sed"} imagem={cardImageClinica}/>
