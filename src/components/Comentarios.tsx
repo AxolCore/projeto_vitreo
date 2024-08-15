@@ -16,24 +16,24 @@ export default function Comentario() {
                     <div className="flex mobile:flex-col items-center w-[full] desktop:h-[20vh]">
                         <Image className="w-[6vw] h-[6vw] mobile:w-[50vw] mobile:h-[50vw] aspect-square rounded-full mr-[2vw]" src={vit} alt="icone1" />
                         <div className="mobile:flex mobile:flex-col mobile:items-center mobile:mt-8 mobile:w-[90vw]">
-                            <p className="text-2xl  text-darkblue font-bold">USER 1</p>
-                            <p className="mt-[2vh]  text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor mi, fermentum imperdiet risus vel, mattis lacinia orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor mi, fermentum imperdiet risus vel, mattis lacinia orci. </p>
+                            <p className="text-2xl  text-darkblue font-bold">MARILIA DE OLIVEIRA</p>
+                            <p className="mt-[2vh]  text-white">Melhor atendimento que já recebi, equipe comprometida e competente! Ótimos profissionais médicos, equipe de apoio muito educada e atenciosa. Pelo bom atendimento prestado nessa clínica, foi descoberta minha doença (Hipertensão Intracraniana Idiopática) e onde… </p>
 
                         </div>
                     </div>
                     <div className="flex mobile:flex-col items-center w-[full] desktop:h-[20vh]">
                         <Image className="w-[6vw] h-[6vw] mobile:w-[50vw] mobile:h-[50vw] aspect-square rounded-full mr-[2vw]" src={vit} alt="icone1" />
                         <div className="mobile:flex mobile:flex-col mobile:items-center mobile:mt-8 mobile:w-[90vw]">
-                            <p className="text-2xl  text-darkblue font-bold">USER 2</p>
-                            <p className="mt-[2vh]  text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor mi, fermentum imperdiet risus vel, mattis lacinia orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor mi, fermentum imperdiet risus vel, mattis lacinia orci. </p>
+                            <p className="text-2xl  text-darkblue font-bold">DANIEL DE M. KELLER</p>
+                            <p className="mt-[2vh]  text-white">Fui atendido em duas ocasiões diferentes: a primeira, para uma consulta de rotina e em outra ocasião, durante um encaixe de emergência. A Dra. Aline Shiokawa e o Dr. Naoye Shiokawa foram muito atenciosos… </p>
 
                         </div>
                     </div>
                     <div className="flex mobile:flex-col items-center w-[full] desktop:h-[20vh]">
                         <Image className="w-[6vw] h-[6vw] mobile:w-[50vw] mobile:h-[50vw] aspect-square rounded-full mr-[2vw]" src={vit} alt="icone1" />
                         <div className="mobile:flex mobile:flex-col mobile:items-center mobile:mt-8 mobile:w-[90vw]">
-                            <p className="text-2xl  text-darkblue font-bold">USER 3</p>
-                            <p className="mt-[2vh]  text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor mi, fermentum imperdiet risus vel, mattis lacinia orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor mi, fermentum imperdiet risus vel, mattis lacinia orci. </p>
+                            <p className="text-2xl  text-darkblue font-bold">ROGER SETOGUTTE</p>
+                            <p className="mt-[2vh]  text-white">Dr. Naoye, grande pessoa, excelente profissional, referência em Retina e Vítreo. Parabéns! Grande abraço!! </p>
 
                         </div>
                     </div>
