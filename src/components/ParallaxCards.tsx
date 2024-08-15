@@ -9,9 +9,9 @@ interface ParallaxCardsProps {
 
 export default function ParallaxCards({icon, alt, label}: ParallaxCardsProps){
     return(
-        <div className="flex flex-col items-center justify-evenly desktop:w-[12vw] mobile:w-[80vw] aspect-video bg-white hover:bg-darkblue rounded-xl p-px mobile:mb-12 group transition-colors duration-700">
+        <div className="flex flex-col items-center justify-evenly desktop:w-[15vw] mobile:w-[80vw] aspect-video bg-white hover:bg-darkblue rounded-xl p-px mobile:mb-12 group transition-colors duration-700">
             <Image className="desktop:w-[5vw] mobile:w-[30vw] group-hover:invert" src={icon} alt={alt} />
-            <label className="group-hover:invert">{label}</label>
+            <label className="group-hover:invert text-center desktop:text-[1.2vw]">{label}</label>
         </div>
     )
 }
